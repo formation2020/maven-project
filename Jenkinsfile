@@ -1,7 +1,9 @@
+/* groovylint-disable CompileStatic */
 pipeline {
     agent any
+    /* groovylint-disable-next-line SpaceBeforeOpeningBrace */
     stages{
-        stage('Build'){
+        stage('Build')
             steps {
                 bat 'mvn clean package'
             }
@@ -34,4 +36,3 @@ pipeline {
             }
         }
     }
-}
